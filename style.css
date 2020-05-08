@@ -1,3 +1,99 @@
-body {
-  background: red;
+.start-menu {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.input {
+}
+.hidden {
+  display: none !important;
+}
+.play-btn {
+  width: 100%;
+}
+.text-large {
+  font-size: 18pt;
+}
+.text-medium {
+  font-size: 14pt;
+}
+.game {
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.play-area {
+  display: flex;
+  flex-direction: column;
+  min-height: 78vh;
+}
+.upgrade-btn {
+  z-index: 1;
+  position: absolute;
+  top: -1rem;
+  left: 5vw;
+  padding: 0.5rem;
+}
+.upgrades {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  top: -525px;
+  left: 30px;
+  min-height: 400px;
+  max-height: 501px;
+  max-width: 600px;
+  min-width: 500px;
+  background: grey;
+  border-radius: 5px;
+  padding: 2rem;
+}
+.upgrade-box {
+  width: 125px;
+  height: 175px;
+  text-align: center;
+  color: white;
+  margin: 1rem;
+  background-color: rgb(70, 70, 70);
+}
+.close-btn {
+  z-index: 3;
+  cursor: pointer;
+  font-size: xx-large;
+  font-weight: 900;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 90%;
+  top: -4%;
+  height: 3rem;
+  width: 3rem;
+  background: rgb(236, 71, 71);
+  border-radius: 100%;
+}
+
+.quest {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  top: -525px;
+  left: 30px;
+  min-height: 400px;
+  max-height: 501px;
+  max-width: 600px;
+  min-width: 500px;
+  background: grey;
+  border-radius: 5px;
+  padding: 2rem;
+}
+.quest-btn {
+  z-index: 1;
+  position: absolute;
+  top: -1rem;
+  left: 10vw;
+  padding: 0.5rem;
+}
+.wrap {
+  flex-wrap: wrap;
 }

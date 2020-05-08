@@ -9,12 +9,178 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="style.css" />
     <title>Miner Mike</title>
   </head>
-  <body>
-    <h1>hello</h1>
 
+  <body>
+    <header class="container-fluid bg-light text-primary">
+      <div class="row">
+        <div class="col-12">
+          <h1>Questomatic</h1>
+        </div>
+      </div>
+    </header>
+    <main class="container-fluid bg-secondary"></main>
+    <!--Start Menu  -->
+    <section>
+      <div class="row">
+        <div
+          id="start-menu"
+          class="col-12 start-menu bg-dark align-items-center justify-content-center hidden"
+        >
+          <div>
+            <form id="play" onsubmit="play(event)">
+              <div>
+                <input
+                  class="mb-3 p-2 input text-center"
+                  type="text"
+                  name="username"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+            </form>
+            <button
+              type="submit"
+              class="text-large btn btn-success play-btn ml-auto p-3"
+            >
+              Play Now !
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of start Menu  -->
+    <!-- Start game section -->
+    <section>
+      <div class="row game bg-secondary">
+        <div class="col-12">
+          <div class="row text-large pl-5">
+            <div class="col-4">day:1</div>
+            <div class="col-4"></div>
+            <div class="col-4"><label id="username"></label></div>
+          </div>
+          <div class="row text-large pl-5">
+            <div id="stone" class="col-4">stone</div>
+            <div id="wood" class="col-4">wood</div>
+            <div id="gold" class="col-4">gold</div>
+          </div>
+          <!--start play area -->
+          <div class="row">
+            <div class="play-area bg-light col-12"></div>
+            <!--end play area -->
+            <div class="col-12">
+              <button
+                onclick="show('upgrades')"
+                class="upgrade-btn btn btn-success"
+              >
+                Upgrades
+              </button>
+
+              <div id="upgrades" class="upgrades hidden">
+                <div onclick="hide('upgrades')" class="close-btn">X</div>
+                <div
+                  class="d-flex wrap justify-content-center align-items-center"
+                >
+                  <div class="upgrade-box p-2">
+                    <label for="pick">Pick Axe<br />cost </label><br />
+                    <button class="btn btn-success">
+                      Upgrade
+                    </button>
+                  </div>
+                  <div class="upgrade-box p-2">
+                    <label for="pick">Pick Axe<br />cost </label><br />
+                    <button class="btn btn-success">
+                      Upgrade
+                    </button>
+                  </div>
+                  <div class="upgrade-box p-2">
+                    <label for="pick">Pick Axe<br />cost </label><br />
+                    <button class="btn btn-success">
+                      Upgrade
+                    </button>
+                  </div>
+                  <div class="upgrade-box p-2">
+                    <label for="pick">Pick Axe<br />cost </label><br />
+                    <button class="btn btn-success">
+                      Upgrade
+                    </button>
+                  </div>
+                  <div class="upgrade-box p-2">
+                    <label for="pick">Pick Axe<br />cost </label><br />
+                    <button class="btn btn-success">
+                      Upgrade
+                    </button>
+                  </div>
+                  <div class="upgrade-box p-2">
+                    <label for="pick">Pick Axe<br />cost </label><br />
+                    <button class="btn btn-success">
+                      Upgrade
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button onclick="show('quest')" class="quest-btn btn btn-success">
+                Quests
+              </button>
+              <div id="quest" class="quest hidden">
+                <div onclick="hide('quest')" class="close-btn">X</div>
+                <div
+                  class="d-flex wrap justify-content-center align-items-center"
+                >
+                  <div class="upgrade-box p-2">
+                    <label for="pick">Pick Axe<br />cost </label><br />
+                    <button class="btn btn-success">
+                      Quest
+                    </button>
+                  </div>
+                  <div class="upgrade-box p-2">
+                    <label for="pick">Pick Axe<br />cost </label><br />
+                    <button class="btn btn-success">
+                      Quest
+                    </button>
+                  </div>
+                  <div class="upgrade-box p-2">
+                    <label for="pick">Pick Axe<br />cost </label><br />
+                    <button class="btn btn-success">
+                      Quest
+                    </button>
+                  </div>
+                  <div class="upgrade-box p-2">
+                    <label for="pick">Pick Axe<br />cost </label><br />
+                    <button class="btn btn-success">
+                      Quest
+                    </button>
+                  </div>
+                  <div class="upgrade-box p-2">
+                    <label for="pick">Pick Axe<br />cost </label><br />
+                    <button class="btn btn-success">
+                      Quest
+                    </button>
+                  </div>
+                  <div class="upgrade-box p-2">
+                    <label for="pick">Pick Axe<br />cost </label><br />
+                    <button class="btn btn-success">
+                      Quest
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End game section -->
+    <footer class="container-fluid bg-dark text-light">
+      <div class="row">
+        <div class="col-12 m-auto text-center">Made by Justin</div>
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
