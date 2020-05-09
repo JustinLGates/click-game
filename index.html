@@ -28,7 +28,7 @@
       <div class="row">
         <div
           id="start-menu"
-          class="col-12 start-menu bg-dark align-items-center justify-content-center hidden"
+          class="col-12 start-menu bg-dark align-items-center justify-content-center"
         >
           <div>
             <form id="play" onsubmit="play(event)">
@@ -63,9 +63,9 @@
             <div class="col-4"><label id="username"></label></div>
           </div>
           <div class="row text-large pl-5">
-            <div id="stone" class="col-4">stone</div>
-            <div id="wood" class="col-4">wood</div>
-            <div id="gold" class="col-4">gold</div>
+            <div id="stone" class="col-6">resources</div>
+
+            <div id="gold" class="col-6">gold</div>
           </div>
           <!--start play area -->
           <div class="row">
@@ -130,45 +130,9 @@
               <div id="quest" class="quest hidden">
                 <div onclick="hide('quest')" class="close-btn">X</div>
                 <div
+                  id="quest-box"
                   class="d-flex wrap justify-content-center align-items-center"
-                >
-                  <div class="upgrade-box p-2">
-                    <label for="pick">Pick Axe<br />cost </label><br />
-                    <button class="btn btn-success">
-                      Quest
-                    </button>
-                  </div>
-                  <div class="upgrade-box p-2">
-                    <label for="pick">Pick Axe<br />cost </label><br />
-                    <button class="btn btn-success">
-                      Quest
-                    </button>
-                  </div>
-                  <div class="upgrade-box p-2">
-                    <label for="pick">Pick Axe<br />cost </label><br />
-                    <button class="btn btn-success">
-                      Quest
-                    </button>
-                  </div>
-                  <div class="upgrade-box p-2">
-                    <label for="pick">Pick Axe<br />cost </label><br />
-                    <button class="btn btn-success">
-                      Quest
-                    </button>
-                  </div>
-                  <div class="upgrade-box p-2">
-                    <label for="pick">Pick Axe<br />cost </label><br />
-                    <button class="btn btn-success">
-                      Quest
-                    </button>
-                  </div>
-                  <div class="upgrade-box p-2">
-                    <label for="pick">Pick Axe<br />cost </label><br />
-                    <button class="btn btn-success">
-                      Quest
-                    </button>
-                  </div>
-                </div>
+                ></div>
               </div>
             </div>
           </div>
